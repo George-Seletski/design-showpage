@@ -1,0 +1,289 @@
+/* Resetting default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    border: 0 solid #e5e7eb;
+    /* Makes sure padding and border are included in element's total width and height */
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+*,
+:after,
+:before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+
+
+/* Remove list styles */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Default link styles */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Default font styles */
+
+body {
+    line-height: 1;
+    background-color: rgba(155, 151, 151, 0.5);
+    font-family: "diatype", sans-serif;
+    background-image: url('img2.jpg');
+}
+
+
+/* Default heading styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+h1 {
+    font-size: 11em;
+}
+
+h2 {
+    font-size: 6em;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+
+/* Default paragraph styles */
+
+p {
+    margin-bottom: 1em;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 100%;
+    margin: 10px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    padding: 10px;
+    height: 97.6lvh;
+}
+
+.grid-container>div {
+    background-color: #574e4e48;
+    color: #fff;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    width: 100%;
+    --tw-backdrop-blur: blur(64px);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.container-description {
+    padding: 20px;
+    grid-area: 5 / 1 / 7 / 3;
+}
+
+.large-container {
+    grid-area: 1 / 1 / 5 / 3;
+    background-color: #000000ce !important;
+}
+
+.container-prez {
+    grid-area: 1 / 3 / 3 / 5;
+    background-image: url('img3.jpg');
+    background-size: cover;
+}
+
+.container-style {
+    grid-area: 3 / 3 / 5 / 5;
+}
+
+#sq-3 {
+    background-image: url('my-logo.png');
+    background-size: contain;
+}
+
+.container-prez,
+.container-style,
+.large-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colors-container {
+    grid-area: 1 / 5 / 5 / 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #a7a5a5;
+    border-radius: 100%;
+}
+
+.color-block {
+    display: flex;
+    padding: 10px 0;
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0px 20px;
+}
+
+.color-name {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+#sq-1 {
+    grid-area: 1 / 6 / 3 / 7;
+}
+
+#sq-1,
+#sq-2,
+#sq-3,
+#sq-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.module-header {
+    font-size: 1.6em;
+}
+
+.module-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#sq-2 {
+    grid-area: 3 / 6 / 5 / 7;
+}
+
+#sq-3 {
+    grid-area: 5 / 3 / 7 / 4;
+}
+
+#sq-4 {
+    grid-area: 5 / 4 / 7 / 5;
+}
+
+.container-font {
+    grid-area: 5 / 5 / 7 / 7;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.font-alphabet {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.text-sample {
+    font-size: 18px;
+}
