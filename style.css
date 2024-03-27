@@ -111,6 +111,7 @@ a {
 .container-prez:hover {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     cursor: pointer;
+    scale: 1.009;
 }
 
 
@@ -120,7 +121,7 @@ body {
     line-height: 1;
     background-color: rgba(155, 151, 151, 0.5);
     font-family: "diatype", sans-serif;
-    /*background-image: url('img2.jpg');*/
+    background-image: url('img2.jpg');
 }
 
 
@@ -220,6 +221,8 @@ p {
     grid-area: 1 / 5 / 5 / 6;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .color-circle {
@@ -228,6 +231,10 @@ p {
     /*background-color: #a7a5a5;*/
     background-color: #636262;
     border-radius: 100%;
+}
+
+.color-circle:hover {
+    scale: 1.2;
 }
 
 .color-block {
