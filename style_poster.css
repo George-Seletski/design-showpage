@@ -1,0 +1,38 @@
+.poster-container {
+    height: 100vh;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.grid-container>* {
+    font-family: 'Satoshi_Complete\Fonts\WEB\fonts\Satoshi-Regular.ttf';
+}
+
+.img-poster {
+    width: 420px;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.grid-item-1 {
+    font-size: 5em;
+    width: 30%;
+}
+
+.grid-item-2 {
+    width: 70%;
+}
+
+.grid-item-3,
+.grid-item-4,
+.grid-item-5 {}
+
+.grid-poster-text {
+    font-size: 1.2em;
+}
