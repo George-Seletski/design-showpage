@@ -15,6 +15,11 @@
     /* Makes sure padding and border are included in element's total width and height */
 }
 
+@font-face {
+    font-family: main_font;
+    src: url('Satoshi_Complete\Fonts\WEB\fonts\Satoshi-Regular.ttf');
+}
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -120,7 +125,7 @@ a {
 body {
     line-height: 1;
     background-color: rgba(155, 151, 151, 0.5);
-    font-family: "diatype", sans-serif;
+    font-family: main_font, sans-serif;
     /*background-image: url('img2.jpg');*/
 }
 
@@ -219,7 +224,7 @@ p {
 
 .colors-container {
     grid-area: 1 / 5 / 5 / 6;
-    display: flex;
+    display: grid;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
